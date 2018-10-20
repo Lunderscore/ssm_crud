@@ -25,6 +25,10 @@
 		<property name="driverClass" value="${jdbc.driverClass}"></property>
 		<property name="user" value="${jdbc.user}"></property>
 		<property name="password" value="${jdbc.password}"></property>
+		<property name="maxIdleTime" value="${jdbc.maxIdleTime}"/>
+		<property name="preferredTestQuery" value="${jdbc.preferredTestQuery}"/>
+		<property name="idleConnectionTestPeriod" value="${jdbc.idleConnectionTestPeriod}"/>
+		<property name="testConnectionOnCheckout" value="${jdbc.testConnectionOnCheckout}"/>
 	</bean>
 
 	<bean id="SqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
